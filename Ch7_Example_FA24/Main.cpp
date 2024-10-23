@@ -7,7 +7,7 @@ void UpdateAccount();
 
 int main()
 {
-	int menu_input = 0;
+	char menu_input = '0';
 	bool loop = true;
 
 	while (loop)
@@ -25,13 +25,13 @@ int main()
 
 		switch (menu_input)
 		{
-		case 1:	AddCustomer();
+		case '1':	AddCustomer();
 			break;
 
-		case 2:	UpdateAccount();
+		case '2':	UpdateAccount();
 			break;
 
-		case 3:	cout << "Exiting program.\n\n";
+		case '3':	cout << "Exiting program.\n\n";
 			loop = false;
 			break;
 
