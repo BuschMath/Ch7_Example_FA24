@@ -4,19 +4,11 @@ using namespace std;
 
 int main()
 {
-	for (int i = 1; i <= 10; i++)
-	{
-		cout << i << endl;
-		for (int j = 1; j <= 10; j++)
-		{
-			if (i % 3 == 0)
-				continue;
-			if (j == i)
-				break;
+	int x = 10;
+	int y = 20;
+	int result = x | y;
 
-			cout << "\t" << j << endl;
-		}
-	}
+	cout << "x or y: " << result << endl;
 
 	return 0;
 }
